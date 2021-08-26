@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NY</title>
+</head>
+<style>
+img {
+    visibility: hidden;
+}
+</style>
+<body>
+    <h1>Eyo, NY!</h1>
+    <h2>do you still remember the password?</h2>
+    <input id="int-input" type="number">
+    <img id="slika" src="image.png" alt="">
+</body>
+<script>
+let inputBox = document.getElementById('int-input');
+
+function displayImage() {
+    if (inputBox.value == '22925115') {
+        document.getElementById('slika').style.visibility = 'visible';
+    }
+}
+
+inputBox.addEventListener('keyup', displayImage)
+</script>
+</html>
