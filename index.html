@@ -22,10 +22,11 @@ let inputBox = document.getElementById('int-input');
 
 function displayImage() {
     if (inputBox.value == '22925115') {
+        console.log(inputBox.value);
         document.getElementById('slika').style.visibility = 'visible';
     }
 }
 
-inputBox.addEventListener('keyup', displayImage)
+inputBox.addEventListener('change', displayImage)
 </script>
 </html>
